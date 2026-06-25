@@ -58,6 +58,7 @@ return {
       lua = { 'stylua' },
 
       javascript = { 'prettier' },
+      javascriptreact = { 'prettier' },
       html = { 'prettier' },
       css = { 'prettier' },
     },

@@ -17,8 +17,6 @@ return {
     opts = {},
   },
   {
-    -- See `:help gitsigns` to understand what the configuration keys do
-    -- Adds git related signs to the gutter, as well as utilities for managing changes
     'lewis6991/gitsigns.nvim',
     opts = {
       signs = {
@@ -36,6 +34,15 @@ return {
     -- See `:help ibl`
     main = 'ibl',
     opts = {},
+  },
+  {
+    'folke/snacks.nvim',
+    priority = 1000,
+    lazy = false,
+    ---@type snacks.Config
+    opts = {
+      notifier = { enabled = true },
+    },
   },
   {
     'windwp/nvim-autopairs',

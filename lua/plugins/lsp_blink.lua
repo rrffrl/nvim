@@ -75,15 +75,6 @@ return {
 
       sources = {
         default = { 'lsp', 'path', 'snippets', 'buffer' },
-        -- sql
-        per_filetype = {
-          sql = { 'snippets', 'dadbod', 'buffer' },
-        },
-        -- add vim-dadbod-completion to your completion providers
-        providers = {
-          -- sql
-          dadbod = { name = 'Dadbod', module = 'vim_dadbod_completion.blink' },
-        },
       },
 
       cmdline = {
@@ -302,7 +293,7 @@ return {
       local servers = {
         -- clangd = {},
         -- gopls = {},
-        -- pyright = {},
+        pyright = {},
         -- rust_analyzer = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
         --
